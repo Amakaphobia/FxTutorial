@@ -1,0 +1,19 @@
+.PunktePanel{
+	-fx-font-size: 40;
+	-fx-alignment: center;
+}
+.PunktePanel .PunkteSchildOpen{
+	-fx-text-fill: yellow;
+}
+
+.PunktePanel .PunkteSchildDone{
+	-fx-text-fill: green;
+}
+.PunktePanel .PunkteSchildWrong{
+	-fx-text-fill: red;
+}
+
+.wonLabel{
+	-fx-font-size: 20;
+	-fx-text-fill: Gold;
+}

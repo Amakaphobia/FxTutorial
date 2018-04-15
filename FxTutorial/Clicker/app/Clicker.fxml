@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import tile.Tile?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+
+
+<AnchorPane
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="app.MainControl">
+	
+	<stylesheets>
+			<String fx:value="app/App.css"/>
+	</stylesheets>
+	
+	<VBox 
+		alignment="center">
+		
+		<TilePane 		
+			fx:id="MainMap"
+			styleClass="TilePane">
+			
+			<padding>
+				<Insets 
+					right="10"
+					left="10"
+					top="10"
+					bottom="10"/>
+			</padding>
+				
+			
+			<children>
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>
+			       	
+			       	<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>
+			       		
+			       	<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>      	
+					<Tile
+			       		onMouseClicked="#handleTileClick"
+			       		styleClass="Tile"/>				
+			</children>
+			
+		</TilePane>
+		
+		<Text 
+			fx:id="PunkteAnzeige"
+			styleClass="FontPunkteAnzeige"/>
+	</VBox>	
+</AnchorPane>

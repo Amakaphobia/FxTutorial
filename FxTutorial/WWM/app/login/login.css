@@ -1,0 +1,42 @@
+.loginPane{
+}
+
+.Welcome{
+	-fx-alignment: top-center;
+	-fx-font-size: 60;
+	-fx-font-weight: bold;
+	-fx-text-fill: Red;
+}
+
+.ButtonPanel{
+	-fx-alignment: center;
+	-fx-padding: 10;
+	-fx-spacing: 50;
+}
+
+.ButtonPanel Label{
+	-fx-font-size: 30;
+	-fx-font-weight: bold;
+	-fx-text-fill: crimson;
+}
+
+.ButtonPanel Button{
+	-fx-background-color: black;
+	-fx-min-height: 50;
+	-fx-min-width: 250;
+	-fx-text-fill: Azure;
+}
+
+.ButtonPanel Button:hover{
+	-fx-background-color: darkgrey;
+	-fx-effect: dropshadow( 
+		three-pass-box, 
+		Red, 
+		10,
+		0.5,
+		0,
+		0
+	);
+}
+
+

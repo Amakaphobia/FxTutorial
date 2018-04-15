@@ -1,0 +1,53 @@
+.root{
+	-fx-font-family: hack;
+	-fx-background-color: black;
+	-fx-text-fill: rgb(147,235,244);
+}
+.topBox{
+	-fx-grid-lines-visible: false;
+	-fx-padding: 10;
+	-fx-vgap: 10;
+	-fx-hgap: 10;
+	-fx-halignment: center;
+	-fx-text-fill: inherit; 	
+}
+
+.topBox HBox{
+	-fx-background-color: inherit;
+	-fx-text-fill: inherit;
+	-fx-spacing: 10;
+	-fx-padding: 0, 10, 0, 10;
+}
+
+.topBox Button{
+	-fx-background-color: inherit;
+	-fx-text-fill: inherit;
+	-fx-border-color: rgb(0,255,64);
+}
+.topBox Label{
+	-fx-text-fill: inherit;
+}
+
+
+
+.topBox Button:hover{
+	-fx-background-color: darkgrey;
+	-fx-text-fill: black;
+}
+
+.Winner{
+	-fx-text-fill: green;
+	-fx-font-weight: bold;
+}
+
+.ccell{
+	-fx-background-color: black;
+	-fx-border-color: red;	
+}
+
+.ccell StackPane Text{	
+	-fx-font-size: 19px;
+	-fx-fill: black;
+	-fx-stroke: white;
+	-fx-stroke-width: 1px;
+}

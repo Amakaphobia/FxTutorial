@@ -1,0 +1,18 @@
+.gameScreen{
+	-fx-alignment: bottom-center;
+}
+.gameGrid{
+	-fx-padding: 20,20,20,20;
+	-fx-hgap: 10;
+	-fx-vgap: 10; 
+	-fx-grid-lines-visible: true;
+}
+.gameGrid Label{
+	-fx-text-fill: red;
+	-fx-font-size: 18;
+	-fx-wrap-text: true;
+}
+
+.gameGrid Button{
+	-fx-max-width: infinity;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane 
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="app.gameScreen.GameControl"
+	fx:id="gameScreen"
+	styleClass="gameScreen">
+		
+	<stylesheets>
+		<String fx:value="app/background/root.css"/>
+	</stylesheets>
+	
+	<children>
+		<fx:include
+			fx:id="background" 
+			source="../backGround/BackGround.fxml"
+			AnchorPane.bottomAnchor="0"
+			AnchorPane.leftAnchor="0"
+			AnchorPane.rightAnchor="0"
+			AnchorPane.topAnchor="0"/>		
+				
+		<fx:include
+			fx:id="questionPanel"
+			source="../gameScreen/QuestionPanel/Question.fxml"
+			AnchorPane.bottomAnchor="10"
+			AnchorPane.leftAnchor="150"
+			AnchorPane.rightAnchor="150"/>
+	
+	
+		<fx:include
+			fx:id="punktePanel"
+			source="../gameScreen/punktePanel/PunkteAnzeige.fxml"
+			AnchorPane.rightAnchor="50"
+			AnchorPane.topAnchor="100"/>
+			
+	</children>		
+</AnchorPane>	
+
+<!-- 
+<BorderPane
+			AnchorPane.bottomAnchor="10"
+			AnchorPane.leftAnchor="50"
+			AnchorPane.rightAnchor="50"
+			AnchorPane.topAnchor="10">
+			BorderPane.alignment="BOTTOM_CENTER"
+			BorderPane.alignment="CENTER_RIGHT"
+
+			<center>
+			</center>
+		</BorderPane>
+
+
+ -->
+

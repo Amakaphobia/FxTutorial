@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+
+<StackPane 
+	xmlns:fx="http://javafx.com/fxml/1"
+	
+	minWidth="1200"
+	minHeight="800"	
+	
+	styleClass="backGround-Container"
+	
+	AnchorPane.bottomAnchor="0"
+	AnchorPane.topAnchor="0"
+	AnchorPane.leftAnchor="0"
+	AnchorPane.rightAnchor="0">
+	
+	<stylesheets>
+		<String fx:value="app/background/root.css"/>
+		<String fx:value="app/background/background.css"/>
+	</stylesheets>
+	
+	<children>
+		<ImageView
+			preserveRatio="true"
+			layoutX="0"
+			layoutY="0">
+			<image>
+				<Image 
+					url="@Background.jpg"
+					backgroundLoading="true"/>				
+			</image>
+		</ImageView>
+	</children>	
+</StackPane>
+
+<!-- 
+
+
+ -->

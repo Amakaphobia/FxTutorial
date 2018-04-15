@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox 
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="wwmapp.LeisteControl"
+	fx:id="LeistenContainer"
+	alignment="center">
+
+	<children>
+		<VBox >
+			<children>
+				<Label 
+					text="1"/>
+				<Label 
+					text="2"/>
+				<Label 
+					text="3"/>
+				<Label 
+					text="4"/>
+				<Label 
+					text="5"/>
+				<Label 
+					text="6"/>
+				<Label 
+					text="7"/>
+				<Label 
+					text="8"/>
+				<Label 
+					text="9"/>
+				<Label 
+					text="10"/>
+				<Label 
+					text="11"/>
+				<Label 
+					text="12"/>
+				<Label 
+					text="13"/>
+				<Label 
+					text="14"/>
+				<Label 
+					text="15"/>
+				<Button 
+					text="boya2"
+					onAction="#setBg"/>
+			</children>
+		</VBox>			
+	</children>
+</VBox>
+
+

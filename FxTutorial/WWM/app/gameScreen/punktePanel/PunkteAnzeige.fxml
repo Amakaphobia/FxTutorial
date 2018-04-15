@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.util.ArrayList?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox 
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:id="punktePanel"
+	fx:controller="app.gameScreen.punktePanel.PunkteAnzeigeControl"
+	styleClass="PunktePanel">
+		
+	<stylesheets>
+		<String fx:value="app/background/root.css"/>
+		<String fx:value="app/gameScreen/punktePanel/PunktePanel.css"/>
+	</stylesheets>
+	
+	<children>
+		<Label
+			fx:id="wonMoney"
+			styleClass="wonLabel"
+			text="Geld: 0"
+			textFill="Gold"/>
+			
+	</children>
+</VBox>
+

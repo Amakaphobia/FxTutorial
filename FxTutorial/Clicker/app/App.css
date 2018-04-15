@@ -1,0 +1,19 @@
+.root{
+	-fx-background-color: black;
+	-fx-alignment: center;
+	-fx-font-family: hack;
+}
+
+.FontPunkteAnzeige{
+	-fx-fill: yellow;
+	-fx-font-size: 50;
+}
+
+.Tile{
+	-fx-font-size: 75;	
+}
+
+.TilePane{
+	-fx-pref-columns: 3;
+	-fx-pref-rows: 3;
+}

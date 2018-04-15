@@ -1,0 +1,32 @@
+#textPanel{
+	-fx-alignment: center;
+	-fx-fill-height: false;
+	-fx-fill-width: false;
+}
+
+#textPanel Label{
+	-fx-alignment: inherit;
+	-fx-text-fill: oldlace;
+	-fx-font-size: 15;
+	-fx-padding: 15;
+	-fx-focus-traversable: inherit;
+}
+
+PointyBackGround{
+	-fx-fill: darkblue;	
+	-fx-stroke: crimson;
+	-fx-stroke-width: 2px;
+	-fx-effect: dropshadow( 
+		three-pass-box, 
+		Black, 
+		10,
+		0.5,
+		0,
+		0
+	);	
+}
+
+PointyBackGround:hover{	
+	-fx-fill: blue;	
+	-fx-stroke: red;	
+}

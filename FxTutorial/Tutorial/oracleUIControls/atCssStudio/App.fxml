@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioMenuItem?>
+
+<VBox 
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="oracleUIControls.atCssStudio.MainControl">
+		
+	<stylesheets>
+		<String fx:value = "oracleUIControls/atCssStudio/css.css"/>
+	</stylesheets>	
+	
+	<children>	
+		<MenuBar>
+			<menus>
+				<Menu 
+					text="File">
+					<items>
+						<MenuItem 
+							text="Shuffle"
+							onAction="#showRandom"/>
+						<MenuItem
+							text="Hide"
+							accelerator="Shortcut+X"
+							onAction="#onClear"/>
+						<MenuItem 
+							text="Exit"
+							onAction="#onExit"/>							
+					</items>
+				</Menu>
+				<Menu
+					text="edit">
+					<items>					
+						<Menu
+							text="Effect">
+							<items>
+								<RadioMenuItem 
+									text="Sepia"
+									fx:id="sepiaMen"
+									onAction="#onEffect"/>						
+								<RadioMenuItem  
+									text="Glow"
+									fx:id="glowMen"
+									onAction="#onEffect"/>
+								<RadioMenuItem  
+									text="Shadow"
+									fx:id="shadowMen"
+									onAction="#onEffect"/>
+							</items>
+						</Menu>						
+						<RadioMenuItem 
+							text="NoEffect"
+							fx:id="nullMen"
+							onAction="#onEffect"
+							disable="true"/>
+					</items>
+				</Menu>
+				<Menu
+					text="View">
+					<items>
+						<MenuItem
+							text="Name"
+							fx:id="viewNameMen"
+							onAction="#onView"/>
+						<MenuItem 
+							text="fancyName"
+							fx:id="viewFancyName"
+							onAction="#onView"/>							
+						<MenuItem 
+							text="image"
+							fx:id="viewImage"
+							onAction="#onView"/>
+						<MenuItem 
+							text="Description"
+							fx:id="viewDescription"
+							onAction="#onView"/>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		
+		<VBox 
+			fx:id="innerVb">
+			<children>			
+				<Label 
+					fx:id="name"/>
+				<Label
+					fx:id="binName"/>
+				<Rectangle
+					fx:id="image" 
+					height="40"
+					width="40"/>
+				<Label 
+					fx:id="description"/>
+			</children>
+		</VBox>
+	</children>
+	
+</VBox>
+
