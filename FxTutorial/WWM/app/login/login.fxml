@@ -39,5 +39,4 @@
 	</children>
 </StackPane>
 
-<!-- TODO Add Nodes -->
 <!--fx:controller="login.LoginControl"-->
